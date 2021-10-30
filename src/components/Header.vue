@@ -2,8 +2,8 @@
   <div class="header-container">
     <b-container>
       <!-- Company Logo -->
-      <b-nav small class="align-items-end justify-content-between mt-2">
-        <div class="logo">HOTELWORLD</div>
+      <b-nav small class="align-items-center justify-content-between mt-2">
+        <div class="logo" @click="goHome">HOTELWORLD</div>
         <!-- Currency Selection -->
         <b-nav-item>
           <span
@@ -12,7 +12,6 @@
             @click="changeCurrency('USD')"
             >USD</span
           >
-          <span class="seperator">|</span>
           <span
             class="currency"
             :class="{ 'selected-currency': isTRY }"
@@ -36,11 +35,18 @@ export default {
     changeCurrency(cur) {
       this.$emit('changeCurrency', cur)
     },
+    goHome() {
+      this.$router.push('/')
+    },
   },
 }
 </script>
 
 <style>
+.nav {
+  margin: 0;
+  padding: 0;
+}
 .logo {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 1px;
@@ -48,22 +54,25 @@ export default {
   font-size: 34px;
   font-weight: 900;
   text-align: left;
+  cursor: pointer;
 }
 
 .currency {
+  background-color: rgba(0, 0, 0, 0.7);
   font-size: 16px;
-  color: #ebebeb;
+  font-weight: 600;
+  color: #777;
+  margin: 5px;
+  padding: 7px;
+  border-radius: 5px;
 }
 
 .selected-currency {
   color: #f25621;
 }
 
-.seperator {
-  margin: 0 5px 0 5px;
-  font-size: 16px;
-}
 .header-container {
   border-bottom: 1px solid #ebebeb;
+  background-color: transparent;
 }
 </style>
