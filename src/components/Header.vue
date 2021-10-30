@@ -51,7 +51,7 @@ export default {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 1px;
   color: #f25621;
-  font-size: 34px;
+  font-size: 48px;
   font-weight: 900;
   text-align: left;
   cursor: pointer;
@@ -72,7 +72,7 @@ export default {
 }
 
 .header-container {
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   background-color: transparent;
 }
 </style>
