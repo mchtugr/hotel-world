@@ -1,18 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header @changeCurrency="changeCurrency" :isUSD="isUSD" :isTRY="isTRY" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Header,
+  },
+  data() {
+    return {
+      currency: 'TRY',
+    }
+  },
+  methods: {
+    changeCurrency(cur) {
+      this.currency = cur
+    },
+  },
+
+  computed: {
+    isUSD() {
+      return this.currency === 'USD'
+    },
+    isTRY() {
+      return this.currency === 'TRY'
+    },
+  },
 }
 </script>
 
@@ -23,6 +41,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
