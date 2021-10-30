@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import Vuelidate from 'vuelidate'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import router from './router'
 
@@ -10,6 +11,7 @@ import '@/assets/styles.css'
 
 Vue.config.productionTip = false
 
+Vue.use(Vuelidate)
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)

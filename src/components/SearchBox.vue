@@ -1,26 +1,33 @@
 <template>
   <div class="search-box">
+    <!-- Heading -->
     <h1>Meet the World</h1>
     <p class="search-description">
       36,000 properties, 178 countries • Over 13 million verified guest reviews
       • 24/7 customer service
     </p>
     <b-container>
-      <b-form>
+      <!-- Form -->
+      <b-form @submit="searchHotels">
         <div class="search-form">
           <b-row>
+            <!-- City -->
             <b-col xs="12">
               <div class="input-container">
                 <b-form-input
-                  v-model="city"
+                  v-model="$v.city.$model"
                   placeholder="Where do you want to go?"
                   class="search-input city-input"
-                ></b-form-input>
+                />
                 <i class="fas fa-search" style="color: #f25621"></i>
+                <div class="search-error" v-if="!$v.city.minLength">
+                  You need type at least three letters!
+                </div>
               </div>
             </b-col>
           </b-row>
-          <b-row>
+          <b-row class="mt-3">
+            <!-- in Date -->
             <b-col md="4" sm="6" xs="6">
               <b-form-group>
                 <label class="search-label">CHECK IN</label>
@@ -31,6 +38,7 @@
                 />
               </b-form-group>
             </b-col>
+            <!-- out Date -->
             <b-col md="4" sm="6" xs="6">
               <b-form-group>
                 <label class="search-label">CHECK OUT</label>
@@ -41,6 +49,7 @@
                 />
               </b-form-group>
             </b-col>
+            <!-- num of Guests -->
             <b-col md="4" sm="12" xs="12">
               <b-form-group>
                 <label class="search-label">GUESTS</label>
@@ -58,13 +67,15 @@
         </div>
       </b-form>
 
-      <b-button class="search-btn">Let's go!</b-button>
+      <b-button class="search-btn" @click="searchHotels">Let's go!</b-button>
     </b-container>
   </div>
 </template>
 
 <script>
+// to give initial outDate
 const currentDate = new Date().getTime()
+import validations from '../mixins/validators'
 export default {
   name: 'SearchBox',
   data() {
@@ -72,8 +83,8 @@ export default {
       guestNum: 1,
       currentDate: new Date().getTime(),
       inDate: new Date().toISOString().split('T')[0],
+      // add 1 day to current day
       outDate: new Date(currentDate + 86400000).toISOString().split('T')[0],
-      city: '',
       selectOptions: [
         { value: 1, text: '1 Guest' },
         { value: 2, text: '2 Guests' },
@@ -83,6 +94,13 @@ export default {
         { value: 6, text: '6 Guests' },
       ],
     }
+  },
+  mixins: [validations],
+  methods: {
+    searchHotels() {
+      console.log('clicked')
+      this.$emit('searchHotels', this.city.toLowerCase())
+    },
   },
 }
 </script>
@@ -164,5 +182,16 @@ h1 {
   position: absolute;
   top: 20px;
   left: 20px;
+}
+
+.search-error {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px;
+  bottom: -35px;
+  padding: 5px;
+  color: red;
+  font-size: 12px;
+  font-weight: 400;
 }
 </style>
