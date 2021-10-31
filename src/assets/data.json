@@ -1,0 +1,181 @@
+[
+  {
+    "id": "cba7c95b",
+    "name": "Mövenpick Hotel",
+    "star": 4,
+    "description": [
+      "The 4-star-superior Mövenpick Hotel provides soundproofed rooms with dark woods, extra-long beds and modern bathrooms.",
+      "Swiss, local and international food is served in the Mövenpick’s restaurant and terrace overlooking a park. Guests can enjoy a unique cocktail in the CAVE Bar.",
+      "The Mövenpick features a grand brickwork lobby, and an on-site sauna area complete with a peaceful relaxation room and spa showers.",
+      "Underground and trains run directly to city center.",
+      "Couples particularly like the location — they rated it 8.9 for a two-person trip. We speak your language!"
+    ],
+    "price": 82,
+    "rating": 9.5,
+    "images": [
+      "movenpick-0.jpeg",
+      "movenpick-1.jpeg",
+      "movenpick-2.jpeg",
+      "movenpick-3.jpeg"
+    ],
+    "reviews": [
+      "Amazing design! Comfortable room, helpful staff. Food is great in the restaurant, though all is a bit on the slow side (might be due to covid-craze). Hotel has it's own garage.",
+      "Polite staff, nice lobby, daily house-keeping, good breakfast.",
+      "Das Frühstück war besonders reichhaltig und super lecker.",
+      "Хорошее расположение. Отличный завтрак 👍🏼 Приветливый персонал. Разрешили на час позже выехать ;)"
+    ],
+    "facilities": [
+      "Parking",
+      "Free WiFi",
+      "Pets allowed",
+      "Family rooms",
+      "Non-smoking rooms",
+      "Fitness centre",
+      "Tea/coffee maker in all rooms",
+      "Bar",
+      "Online check-in"
+    ],
+    "distance": 1.2,
+    "top_perks": [
+      {
+        "icon": "<i class='fas fa-map-marker-alt' style='color: #00DFCE'></i>",
+        "title": "Perfect <strong>Location</strong>"
+      },
+      {
+        "icon": "<i class='fas fa-user-friends' style='color: #00DFCE'></i>",
+        "title": "Brilliant <strong>Staff</strong>"
+      }
+    ]
+  },
+  {
+    "id": "116fbbcb",
+    "name": "Holiday Inn",
+    "star": 5,
+    "description": [
+      "The rooms have a modern design and offer a pillow menu. They are also fully air-conditioned.",
+
+      "There are 2 more restaurants to choose from, which serve a variety of European cuisine.",
+
+      "Facilities at Holiday Inn include a fully equipped fitness room and 24-hour front desk.",
+
+      "Couples particularly like the location — they rated it 9.4 for a two-person trip.",
+
+      "We speak your language!",
+
+      "Holiday Inn, an IHG Hotel has been welcoming Booking.com guests since 13 Oct 2009."
+    ],
+    "price": 78,
+    "rating": 8.7,
+    "images": [
+      "holiday-inn-0.jpeg",
+      "holiday-inn-1.jpeg",
+      "holiday-inn-2.jpeg",
+      "holiday-inn-3.jpeg"
+    ],
+    "reviews": [
+      "all was excellent, rooms were clean and the stuff was friendly, very long breakfast time from seven to eleven is exactly what we needed. The staff in the lounge part of the breakfast rooms is incredible: highly professional, invisible and was exactly predicting our needs. Something what I haven`t seen so far at that scale.",
+      "Very nice and friendly personnel. Delicious breakfast.",
+      "Breakfast very rich, time from 7 am to 11 am very convenient, health safety seriously applied."
+    ],
+    "facilities": [
+      "1 swimming pool",
+      "Parking",
+      "Pets allowed",
+      "Non-smoking rooms",
+      "very good fitness centre",
+      "Bar"
+    ],
+    "distance": 1.2,
+    "top_perks": [
+      {
+        "icon": "<i class='fas fa-hand-sparkles' style='color: #00DFCE'></i>",
+        "title": "Excellent <strong>Cleanliness</strong>"
+      }
+    ]
+  },
+  {
+    "id": "c857f3cb",
+    "name": "Novotel",
+    "star": 4,
+    "description": [
+      "The spacious, air-conditioned rooms offer pastel-coloured interiors and elegant décor. Each room comes with a flat-screen TV, a minibar and a private bathroom with a hairdryer.",
+      "MC Traders Restaurant serves international and Russian cuisine, and MC Traders Lounge Bar offers a variety of drinks and light snacks.",
+      "Guests are welcome to relax in the Turkish steam bath or sauna, and visit the on-site massage room. Afimall Shopping Centre is located in the same building.",
+      "Metro Station is just a minute’s walk from Novotel. Train Station is 4.5 km away, and International Airport is a 35-minute express train ride from this station.",
+      "Couples particularly like the location — they rated it 9.2 for a two-person trip.",
+      "We speak your language!",
+      "Novotel has been welcoming Booking.com guests since 7 Feb 2013."
+    ],
+    "price": 47,
+    "rating": 7.8,
+    "images": [
+      "novotel-0.jpeg",
+      "novotel-1.jpeg",
+      "novotel-2.jpeg",
+      "novotel-3.jpeg"
+    ],
+    "reviews": [
+      "The staff, view, breakfast and spa are exceptional",
+      "Better than I expected I had a deluxe room with amazing view it was a very good choice",
+      "Excellent service, delicious breakfasts and nice an clean rooms"
+    ],
+    "facilities": [
+      "Free WiFi",
+      "Parking",
+      "Airport shuttle",
+      "Spa and wellness centre",
+      "Pets allowed",
+      "Non-smoking rooms",
+      "Bar"
+    ],
+    "distance": 2.4,
+    "top_perks": [
+      {
+        "icon": "<i class='fas fa-map-marker-alt' style='color: #00DFCE'></i>",
+        "title": "Great <strong>Location</strong>"
+      }
+    ]
+  },
+  {
+    "id": "95ab6537",
+    "name": "Ramada",
+    "star": 5,
+    "description": [
+      "Ramada Plaza by Wyndham Thraki is set on a private beach at the west end of Alexandroupolis. Known for its top-rated conference facilities, the 5-star hotel also offers 2 outdoor pools, while a luxurious spa is accessible to guests over 16.",
+      "Each of the tastefully decorated rooms features a spacious balcony with view of the swimming pools and the Aegean Sea. In-room amenities include air-conditioning, 32\" LED TV with video-on-demand and free internet access. Upon arrival, 2 bottles of water and fruits are offered.",
+      "Featuring 4 hydrotherapy pools, the hotel’s Thalasso & Wellness Spa includes 14 treatment rooms and a relaxation area with health bar, available to guests over 16 years old. Guests enjoy free access to the fully equipped fitness centre, while a range of outdoor sports activities may be enjoyed.",
+      "A rich daily breakfast buffet is served at the Allegro restaurant with its lovely veranda. During the day guests can sample traditional Thracian cuisine, as well as international dishes. Coffee or cocktails can be enjoyed in the Avra Pool Bar or the piano bar Thalassa.",
+      "The complex is 4 km from Alexandroupolis city centre. Democritus International Airport is 9 km away, whereas the port and the railway station of Alexandroupolis are 4 km away. Free private parking is possible on site.",
+      "Couples particularly like the location — they rated it 9.0 for a two-person trip.",
+      "We speak your language!",
+      "Ramada Plaza by Wyndham Thraki has been welcoming Booking.com guests since 25 Jul 2007."
+    ],
+    "price": 121,
+    "rating": 8.3,
+    "images": [
+      "ramada-0.jpeg",
+      "ramada-1.jpeg",
+      "ramada-2.jpeg",
+      "ramada-3.jpeg"
+    ],
+    "reviews": [
+      "The sea views from the room, good breakfast, good dinner.",
+      "Our room was very nice and staff was very profesional. Thank you!!!"
+    ],
+    "facilities": [
+      "Free parking",
+      "Free WiFi Spa and wellness centre",
+      "Beachfront",
+      "Family rooms",
+      "Fitness centre",
+      "Tea/coffee maker in all rooms"
+    ],
+    "distance": 4.4,
+    "top_perks": [
+      {
+        "icon": "<i class='fas fa-hand-sparkles' style='color: #00DFCE'></i>",
+        "title": "Fantastic <strong>Cleanliness</strong>"
+      }
+    ]
+  }
+]
