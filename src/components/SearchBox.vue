@@ -21,7 +21,7 @@
                 />
                 <i class="fas fa-search" style="color: #f25621"></i>
                 <div class="search-error" v-if="!$v.city.minLength">
-                  You need type at least three letters!
+                  You need to type at least three letters!
                 </div>
               </div>
             </b-col>
@@ -98,8 +98,10 @@ export default {
   mixins: [validations],
   methods: {
     searchHotels() {
-      console.log('clicked')
-      this.$emit('searchHotels', this.city.toLowerCase())
+      this.$v.$touch()
+      if (!this.$v.$invalid) {
+        this.$emit('searchHotels', this.city.toLowerCase())
+      }
     },
   },
 }

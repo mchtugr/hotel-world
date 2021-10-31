@@ -1,7 +1,7 @@
 <template>
   <div class="homepage">
     <Header @changeCurrency="changeCurrency" :isUSD="isUSD" :isTRY="isTRY" />
-    <SearchBox />
+    <SearchBox @searchHotels="searchHotels" />
   </div>
 </template>
 
@@ -16,7 +16,12 @@ export default {
     Header,
     SearchBox,
   },
-  ...headerMixin,
+  mixins: [headerMixin],
+  methods: {
+    searchHotels(city) {
+      this.$router.push({ name: 'CityHotels', params: { city } })
+    },
+  },
 }
 </script>
 

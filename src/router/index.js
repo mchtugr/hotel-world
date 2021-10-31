@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Homepage from '../pages/Homepage.vue'
 import HotelDetail from '../pages/HotelDetail.vue'
 import PaymentDetail from '../pages/PaymentDetail.vue'
+import CityHotels from '../pages/CityHotels.vue'
 
 Vue.use(VueRouter)
 
@@ -18,7 +19,13 @@ const routes = [
     component: PaymentDetail,
   },
   {
-    path: '/:city/:hotelId',
+    path: '/:city',
+    name: 'CityHotels',
+    component: CityHotels,
+    props: true,
+  },
+  {
+    path: '/:city/hotel/:hotelId',
     name: 'HotelDetail',
     component: HotelDetail,
   },

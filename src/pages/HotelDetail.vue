@@ -13,7 +13,7 @@ export default {
   components: {
     Header,
   },
-  ...headerMixin,
+  mixins: [headerMixin],
 }
 </script>
 
