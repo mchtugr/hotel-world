@@ -15,6 +15,7 @@ Vue.use(Vuelidate)
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
+Vue.use(require('vue-faker'))
 
 new Vue({
   router,
