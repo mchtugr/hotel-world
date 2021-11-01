@@ -170,14 +170,14 @@ export default {
       }
     },
     totalNights: function () {
-      if (this.$route.params.totalDays === 1) {
+      if (this.$route.query.totalDays === '1') {
         return this.$route.query.totalDays + ' night'
       } else {
         return this.$route.query.totalDays + ' nights'
       }
     },
     totalGuests: function () {
-      if (this.$route.query.guestNum === 1) {
+      if (this.$route.query.guestNum === '1') {
         return this.$route.query.guestNum + ' guest'
       } else {
         return this.$route.query.guestNum + ' guests'
