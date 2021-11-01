@@ -25,15 +25,22 @@
       "Хорошее расположение. Отличный завтрак 👍🏼 Приветливый персонал. Разрешили на час позже выехать ;)"
     ],
     "facilities": [
-      "Parking",
-      "Free WiFi",
-      "Pets allowed",
-      "Family rooms",
-      "Non-smoking rooms",
-      "Fitness centre",
-      "Tea/coffee maker in all rooms",
-      "Bar",
-      "Online check-in"
+      {
+        "icon": "<i class='fas fa-parking'></i>",
+        "title": "Parking"
+      },
+      { "icon": "<i class='fas fa-wifi'></i>", "title": "Free WiFi" },
+      { "icon": "<i class='fas fa-paw'></i>", "title": "Pets allowed" },
+      {
+        "icon": "<i class='fas fa-smoking-ban'></i>",
+        "title": "Non-smoking rooms"
+      },
+      { "icon": "<i class='fas fa-dumbbell'></i>", "title": "Fitness center" },
+      {
+        "icon": "<i class='fas fa-mug-hot'></i>",
+        "title": "Tea/coffee maker in all rooms"
+      },
+      { "icon": "<i class='fas fa-glass-cheers'></i>", "title": "Bar" }
     ],
     "distance": 1.2,
     "top_perks": [
@@ -78,12 +85,19 @@
       "Breakfast very rich, time from 7 am to 11 am very convenient, health safety seriously applied."
     ],
     "facilities": [
-      "1 swimming pool",
-      "Parking",
-      "Pets allowed",
-      "Non-smoking rooms",
-      "very good fitness centre",
-      "Bar"
+      { "icon": "<i class='fas fa-swimmer'></i>", "title": "1 swimming pool" },
+      {
+        "icon": "<i class='fas fa-parking' style='color: #00DFCE'></i>",
+        "title": "Parking"
+      },
+      { "icon": "<i class='fas fa-wifi'></i>", "title": "Free WiFi" },
+      { "icon": "<i class='fas fa-paw'></i>", "title": "Pets allowed" },
+      {
+        "icon": "<i class='fas fa-smoking-ban'></i>",
+        "title": "Non-smoking rooms"
+      },
+      { "icon": "<i class='fas fa-dumbbell'></i>", "title": "Fitness center" },
+      { "icon": "<i class='fas fa-glass-cheers'></i>", "title": "Bar" }
     ],
     "distance": 1.2,
     "top_perks": [
@@ -120,13 +134,22 @@
       "Excellent service, delicious breakfasts and nice an clean rooms"
     ],
     "facilities": [
-      "Free WiFi",
-      "Parking",
-      "Airport shuttle",
+      { "icon": "<i class='fas fa-wifi'></i>", "title": "Free WiFi" },
+      {
+        "icon": "<i class='fas fa-parking' style='color: #00DFCE'></i>",
+        "title": "Parking"
+      },
+      {
+        "icon": "<i class='fas fa-shuttle-van'></i>",
+        "title": "Airport shuttle"
+      },
       "Spa and wellness centre",
-      "Pets allowed",
-      "Non-smoking rooms",
-      "Bar"
+      { "icon": "<i class='fas fa-paw'></i>", "title": "Pets allowed" },
+      {
+        "icon": "<i class='fas fa-smoking-ban'></i>",
+        "title": "Non-smoking rooms"
+      },
+      { "icon": "<i class='fas fa-glass-cheers'></i>", "title": "Bar" }
     ],
     "distance": 2.4,
     "top_perks": [
@@ -142,9 +165,6 @@
     "star": 5,
     "description": [
       "Ramada Plaza by Wyndham Thraki is set on a private beach at the west end of Alexandroupolis. Known for its top-rated conference facilities, the 5-star hotel also offers 2 outdoor pools, while a luxurious spa is accessible to guests over 16.",
-      "Each of the tastefully decorated rooms features a spacious balcony with view of the swimming pools and the Aegean Sea. In-room amenities include air-conditioning, 32\" LED TV with video-on-demand and free internet access. Upon arrival, 2 bottles of water and fruits are offered.",
-      "Featuring 4 hydrotherapy pools, the hotel’s Thalasso & Wellness Spa includes 14 treatment rooms and a relaxation area with health bar, available to guests over 16 years old. Guests enjoy free access to the fully equipped fitness centre, while a range of outdoor sports activities may be enjoyed.",
-      "A rich daily breakfast buffet is served at the Allegro restaurant with its lovely veranda. During the day guests can sample traditional Thracian cuisine, as well as international dishes. Coffee or cocktails can be enjoyed in the Avra Pool Bar or the piano bar Thalassa.",
       "The complex is 4 km from Alexandroupolis city centre. Democritus International Airport is 9 km away, whereas the port and the railway station of Alexandroupolis are 4 km away. Free private parking is possible on site.",
       "Couples particularly like the location — they rated it 9.0 for a two-person trip.",
       "We speak your language!",
@@ -163,12 +183,22 @@
       "Our room was very nice and staff was very profesional. Thank you!!!"
     ],
     "facilities": [
-      "Free parking",
-      "Free WiFi Spa and wellness centre",
-      "Beachfront",
-      "Family rooms",
-      "Fitness centre",
-      "Tea/coffee maker in all rooms"
+      {
+        "icon": "<i class='fas fa-parking' style='color: #00DFCE'></i>",
+        "title": "Free Parking"
+      },
+
+      { "icon": "<i class='fas fa-wifi'></i>", "title": "Free WiFi" },
+      "Spa and wellness centre",
+      {
+        "icon": "<i class='fas fa-umbrella-beach'></i>",
+        "title": "Beachfront"
+      },
+      { "icon": "<i class='fas fa-dumbbell'></i>", "title": "Fitness center" },
+      {
+        "icon": "<i class='fas fa-mug-hot'></i>",
+        "title": "Tea/coffee maker in all rooms"
+      }
     ],
     "distance": 4.4,
     "top_perks": [
