@@ -2,6 +2,7 @@
   <div class="m-5 hotel-card">
     <b-card no-body class="overflow-hidden">
       <b-row no-gutters>
+        <!-- hotel img -->
         <b-col md="4">
           <b-card-img
             :src="require(`@/assets/img/${data.images[0]}`)"
@@ -9,6 +10,7 @@
             class="rounded-0 hotel-card-img"
           ></b-card-img>
         </b-col>
+        <!-- hotel card middle / info -->
         <b-col md="5">
           <b-card-body class="hotel-card-middle">
             <div class="hotel-card-top">
@@ -60,10 +62,10 @@
             </div>
           </b-card-body>
         </b-col>
-
+        <!-- price info -->
         <b-col md="3">
           <div class="price-section">
-            <div class="local-price">{{ localPrice }}</div>
+            <div class="local-price">{{ localPrice }} {{ currency }}</div>
             <div class="price-info">per person per night</div>
             <div class="view-btn" @click="goHotelDetail">View</div>
           </div>
@@ -83,13 +85,10 @@ export default {
     city: String,
     currency: String,
   },
-  data() {
-    return {
-      number: 12,
-    }
-  },
+
   methods: {
     goHotelDetail() {
+      // send hotel id to parent
       this.$emit('goHotelDetail', this.data.id)
     },
   },
@@ -97,9 +96,9 @@ export default {
   computed: {
     localPrice: function () {
       if (this.currency === 'TRY') {
-        return (this.data.price * 9.6).toFixed(2) + ' ' + this.currency
+        return (this.data.price * 9.6).toFixed(2)
       } else {
-        return this.data.price + ' ' + this.currency
+        return this.data.price
       }
     },
   },

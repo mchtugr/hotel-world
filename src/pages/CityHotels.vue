@@ -36,9 +36,13 @@ export default {
   },
   methods: {
     goHotelDetail(hotelId) {
-      this.$router.push({ name: 'HotelDetail', params: { hotelId } })
+      this.$router.push({
+        path: `${this.$route.params.city}/hotel/${hotelId}}`,
+        query: { hotelId, ...this.$route.query },
+      })
     },
   },
+
   mixins: [headerMixin, filters],
 }
 </script>

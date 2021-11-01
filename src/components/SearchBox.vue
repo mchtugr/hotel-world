@@ -100,8 +100,34 @@ export default {
     searchHotels() {
       this.$v.$touch()
       if (!this.$v.$invalid) {
-        this.$emit('searchHotels', this.city.toLowerCase())
+        // send form values to parent
+        this.$emit('searchHotels', {
+          city: this.city.toLowerCase(),
+          guestNum: this.guestNum,
+          totalDays: this.totalDays,
+          inDate: this.inDate,
+          outDate: this.outDate,
+        })
       }
+    },
+  },
+  computed: {
+    // calculate total stays
+    totalDays: function () {
+      function treatAsUTC(date) {
+        var result = new Date(date)
+        result.setMinutes(result.getMinutes() - result.getTimezoneOffset())
+        return result
+      }
+
+      function daysBetween(startDate, endDate) {
+        var millisecondsPerDay = 24 * 60 * 60 * 1000
+        return (
+          (treatAsUTC(endDate) - treatAsUTC(startDate)) / millisecondsPerDay
+        )
+      }
+
+      return daysBetween(this.inDate, this.outDate)
     },
   },
 }

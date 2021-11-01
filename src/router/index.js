@@ -28,6 +28,7 @@ const routes = [
     path: '/:city/hotel/:hotelId',
     name: 'HotelDetail',
     component: HotelDetail,
+    props: true,
   },
 
   // {

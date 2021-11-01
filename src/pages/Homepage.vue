@@ -18,8 +18,9 @@ export default {
   },
   mixins: [headerMixin],
   methods: {
-    searchHotels(city) {
-      this.$router.push({ name: 'CityHotels', params: { city } })
+    searchHotels(options) {
+      // send search form details to next route
+      this.$router.push({ path: options.city, query: options })
     },
   },
 }
