@@ -99,7 +99,7 @@ export default {
   methods: {
     searchHotels() {
       this.$v.$touch()
-      if (!this.$v.$invalid) {
+      if (!this.$v.city.$invalid) {
         // send form values to parent
         this.$emit('searchHotels', {
           city: this.city.toLowerCase(),

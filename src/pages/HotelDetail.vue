@@ -3,7 +3,7 @@
     <Header @changeCurrency="changeCurrency" :isUSD="isUSD" :isTRY="isTRY" />
     <b-container>
       <b-row>
-        <b-col md="8" class="mt-3">
+        <b-col lg="8" class="mt-3">
           <div class="my-selection">
             {{ hotelDetail.name }} in {{ $route.query.city | capitalize }}
           </div>
@@ -86,7 +86,8 @@
         </b-col>
 
         <!-- Summary -->
-        <b-col md="4" class="mt-3">
+        <b-col lg="4" class="mt-3">
+          <!-- <BookingSummary :currency="currency" :hotelDetail="hotelDetail" /> -->
           <div class="my-selection">My Selection</div>
           <b-card>
             <div class="d-flex justify-content-between bottom-border">
@@ -124,7 +125,7 @@
               >
             </div>
           </b-card>
-          <div class="book-now">BOOK NOW</div>
+          <div class="book-now" @click="goReservationPage">BOOK NOW</div>
         </b-col>
       </b-row>
     </b-container>
@@ -148,6 +149,7 @@ export default {
       hotelDetail: hotels.find(
         (hotel) => hotel.id === this.$route.query.hotelId
       ),
+      slide: 0,
       name: this.$faker().name.findName(),
       imgUrl: this.$faker().image.avatar(),
     }
@@ -158,6 +160,12 @@ export default {
     },
     onSlideEnd() {
       this.sliding = false
+    },
+    goReservationPage() {
+      this.$router.push({
+        path: `${this.hotelDetail.id}/reservation`,
+        query: { ...this.$route.query },
+      })
     },
   },
   mixins: [headerMixin, filters],
