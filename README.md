@@ -1,6 +1,6 @@
 # hotel-world
 
-# preview Link (here)[https://hotel-world.vercel.app/]
+# preview Link [here](https://hotel-world.vercel.app/)
 
 ## Project setup
 
