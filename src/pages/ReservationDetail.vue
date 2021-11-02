@@ -51,11 +51,65 @@
             </div>
           </b-card>
           <div>
-            <b-button v-b-modal.modal-1 class="book-now">PAY NOW</b-button>
+            <div class="mt-3">
+              <button
+                :disabled="isDisabled"
+                class="pay-btn"
+                v-b-modal.modal-multi-1
+              >
+                Pay Now
+              </button>
 
-            <b-modal id="modal-1" title="BootstrapVue">
-              <p class="my-4">Hello from modal!</p>
-            </b-modal>
+              <b-modal
+                id="modal-multi-1"
+                size="lg"
+                title="Vue Bank"
+                ok-only
+                no-stacking
+              >
+                <b-container>
+                  <h3 class="text-center">
+                    Total {{ pricePerNight * this.$route.query.totalDays }}
+                    {{ currency }}
+                  </h3>
+                  <b-col lg="8" class="m-auto">
+                    <b-form class="p-3">
+                      <div class="my-2">
+                        <div>Cardholder Name</div>
+                        <b-form-input type="text" placeholder="John" />
+                      </div>
+                      <div class="my-2">
+                        <div>Card Number</div>
+                        <b-form-input type="text" placeholder="John" />
+                      </div>
+                      <b-row class="my-2">
+                        <b-col>
+                          <div>Expiry Date</div>
+                          <b-form-input type="text" placeholder="John" />
+                        </b-col>
+                        <b-col>
+                          <div>CVV</div>
+                          <b-form-input type="text" placeholder="John" />
+                        </b-col>
+                      </b-row>
+                    </b-form>
+                  </b-col>
+                </b-container>
+                <div class="d-flex justify-center">
+                  <div v-b-modal.modal-multi-2 class="pay-btn">Pay Now</div>
+                </div>
+              </b-modal>
+
+              <b-modal id="modal-multi-2" title="Second Modal" ok-only>
+                <h2 class="my-2 text-success text-center">
+                  Payment Successfull !
+                </h2>
+                <p class="text-center">
+                  {{ pricePerNight * this.$route.query.totalDays }}
+                  {{ currency }} deducted from your account
+                </p>
+              </b-modal>
+            </div>
           </div>
         </b-col>
       </b-row>
@@ -83,7 +137,6 @@ export default {
     }
   },
   mixins: [headerMixin],
-
   computed: {
     localPrice: function () {
       if (this.currency === 'TRY') {
@@ -116,4 +169,43 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style>
+.credit-card-container {
+  display: grid;
+  height: 100px;
+  align-items: center;
+}
+.credit-card {
+  margin: 20px;
+  background-color: #efefef;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.pay-btn {
+  background-color: #f25621;
+  color: #fff;
+  border: none;
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background-color: #ca3b0d;
+  border: none;
+}
+
+.pay-btn:focus {
+  background-color: #ca3b0d;
+  border: none;
+  outline: none;
+}
+
+.pay-btn:disabled {
+  background-color: #ebebeb;
+}
+</style>
