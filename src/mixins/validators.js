@@ -127,7 +127,7 @@ export default {
         required,
         minLength: minLength(3),
       },
-      creditCard: {
+      cardNumber: {
         required,
         minLength: minLength(16),
         maxLength: maxLength(16),
