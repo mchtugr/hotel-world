@@ -36,6 +36,30 @@ const checkHesCode = (value) => {
   return regex.test(value)
 }
 
+const checkExpiryDate = (value) => {
+  if (!value) return true
+  const month = value.slice(0, 2)
+  const slash = value.slice(2, 3)
+  const year = value.slice(3)
+  // if month or year not a number do not validate
+  if (isNaN(Number(month)) || isNaN(Number(year))) {
+    return false
+  }
+  // month should be between 1 and 12
+  if (Number(month) > 12 || Number(month) < 1) {
+    return false
+  }
+  // '/' should be between month and year
+  if (slash !== '/') {
+    return false
+  }
+  // year should be between 2021 and 2030
+  if (Number(year) < 21 || Number(year) > 30) {
+    return false
+  }
+  // if all conditions met, validate
+  return true
+}
 export default {
   data() {
     return {
@@ -49,6 +73,12 @@ export default {
         tel: null,
         identityNum: null,
         hesCode: null,
+      },
+      creditCard: {
+        fullName: null,
+        cardNumber: null,
+        expiryDate: null,
+        cvvNumber: null,
       },
     }
   },
@@ -90,6 +120,26 @@ export default {
       hesCode: {
         required,
         checkHesCode,
+      },
+    },
+    creditCard: {
+      fullName: {
+        required,
+        minLength: minLength(3),
+      },
+      creditCard: {
+        required,
+        minLength: minLength(16),
+        maxLength: maxLength(16),
+      },
+      expiryDate: {
+        required,
+        checkExpiryDate,
+      },
+      cvvNumber: {
+        required,
+        minLength: minLength(3),
+        maxLength: maxLength(3),
       },
     },
   },
