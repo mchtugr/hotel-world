@@ -1,31 +1,49 @@
-# hotel-world
+# Hotel World
 
-# preview Link [here](https://hotel-world.vercel.app/)
+This project is coded for Reengen Fullstack Bootcamp.
 
-## Project setup
+## Preview Link
 
-```
-npm install
-```
+You can preview the app [here](https://hotel-world.vercel.app/).
 
-### Compiles and hot-reloads for development
+## Run locally
 
-```
-npm run serve
-```
+Clone the project
 
-### Compiles and minifies for production
-
-```
-npm run build
+```bash
+  git clone https://github.com/mchtugr/hotel-world.git
 ```
 
-### Lints and fixes files
+Go to project directory
 
+```bash
+  cd hotel-world
 ```
-npm run lint
+
+Install dependencies
+
+```bash
+  npm install
 ```
 
-### Customize configuration
+Run the app
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```bash
+  npm run serve
+```
+
+## Built with
+
+- VueJs
+- Vue Bootstrap
+- Vuelidate
+- Vue Router
+
+## Contributing
+
+Pull requests are welcome.
+For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
