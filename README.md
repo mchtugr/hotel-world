@@ -6,6 +6,10 @@ This project is coded for Reengen Fullstack Bootcamp.
 
 You can preview the app [here](https://hotel-world.vercel.app/).
 
+## ScreenShot
+
+![hotelworld](ss/hotelworld.gif)
+
 ## Run locally
 
 Clone the project
